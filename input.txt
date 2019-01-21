@@ -1,23 +1,10 @@
-cookiejar.py(703):     i = h.find(".")
-cookiejar.py(704):     if i >= 0:
-cookiejar.py(706):         b = h[i+1:]
-cookiejar.py(707):         i = b.find(".")
-cookiejar.py(708):         if is_HDN(h) and (i >= 0 or b == "local"):
- --- modulename: cookiejar, funcname: is_HDN
-cookiejar.py(528):     if IPV4_RE.search(text):
-cookiejar.py(530):     if text == "":
-cookiejar.py(532):     if text[0] == "." or text[-1] == ".":
-cookiejar.py(534):     return True
-cookiejar.py(709):             return "."+b
- --- modulename: cookiejar, funcname: domain_match
-cookiejar.py(559):     A = A.lower()
-cookiejar.py(560):     B = B.lower()
-cookiejar.py(561):     if A == B:
-cookiejar.py(563):     if not is_HDN(A):
- --- modulename: cookiejar, funcname: is_HDN
-cookiejar.py(528):     if IPV4_RE.search(text):
-cookiejar.py(530):     if text == "":
-cookiejar.py(532):     if text[0] == "." or text[-1] == ".":
-cookiejar.py(534):     return True
-cookiejar.py(565):     i = A.rfind(B)
-cookiejar.py(566):     if i == -1 or i == 0:
+--- modulename: autopd, funcname: <module>
+autopd.py(1): def name():
+autopd.py(4): john=name()
+ --- modulename: autopd, funcname: name
+autopd.py(2):     print("lol")
+lol
+autopd.py(3):     print("second")
+second
+ --- modulename: trace, funcname: _unsettrace
+trace.py(71):     sys.settrace(None)

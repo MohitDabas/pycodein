@@ -46,12 +46,23 @@ except Exception as e:
 
 
 
-
-
-
-            
-
 print(file_name_line)
+for key in file_name_line.keys():
+    print(key,file_name_line[key])
+    try:
+        file_op=open(file_name_line[key][1],'r')
+        read_op=file_op.readlines()
+        print(read_op[key-1])
+        #write_op=open(file_name_line[key][1],'w')
+        read_op[key-1]=read_op[key-1]+'tictoc'
+       
+        file_op.close()
+        write_op.close()
+        print(read_op)
+       
+        
+    except Exception as e:
+        print(e)  
 
 #for i  in range(0,len(file_data)):
     #print li.fi
