@@ -11,21 +11,35 @@ try:
           if (li.replace('\n','').replace(' ','').endswith(':')):  
             temp_list=[]
             line_number=int(li[li.find('(')+1:li.find(')')])
-            temp_list.append(li[:li.find('(')])
-            temp_list.append('keyword')
-            file_name_line[line_number]=temp_list
+            print(line_number)
+            temp_list.append(line_number)
+            temp_list.append('keyword')  
+            try:          
+             file_name_line[li[:li.find('(')]].append((line_number,'keyword'))
+            except:
+                file_name_line[li[:li.find('(')]]=[]
+                file_name_line[li[:li.find('(')]].append((line_number,'keyword'))
+                
 except:
-    pass            
+    pass
+             
+print(file_name_line)
+line_key=[]
+#key=file_name_line.keys()
+for key in file_name_line.keys():
+    for i in range(0,len(file_name_line[key])):
+        #print (file_name_line[key][i][0])
+        line_key.append(file_name_line[key][i][0])
 
-key=file_name_line.keys()
 regex = r":\s{1,}"
 try:
  for li in file_data:
+
     try:
      line_number=int(li[li.find('(')+1:li.find(')')])
     except:
-        pass 
-    if line_number not in key:
+      continue
+    if line_number not in line_key:
         temp_list=[]
         matches = re.finditer(regex, li, re.MULTILINE)
         for matchNum, match in enumerate(matches, start=1):
@@ -33,36 +47,42 @@ try:
             #print (li)
             #print (indentation)
             inject_code="print (lol)"
-            print(li+" "*match.end()+inject_code)
+           # print(li+" "*match.end()+inject_code)
             temp_list.append(indentation)
              
-       
-        temp_list.append(li[:li.find('(')])
+        print(line_number)
+        temp_list.append(line_number)
         temp_list.append('statement')
-        file_name_line[line_number]=temp_list
+        try:
+           print (li[:li.find('(')])
+           file_name_line[li[:li.find('(')]].append((line_number,indentation,'statement'))
+        
+        except Exception as e:
+            file_name_line[li[:li.find('(')]]=[]
+            file_name_line[li[:li.find('(')]].append((line_number,indentation,'statement'))
 except Exception as e:
-    print(e)       
+    pass       
 
 
 
 
 print(file_name_line)
-for key in file_name_line.keys():
-    print(key,file_name_line[key])
-    try:
-        file_op=open(file_name_line[key][1],'r')
-        read_op=file_op.readlines()
-        print(read_op[key-1])
+#for key in file_name_line.keys():
+#    print(key,file_name_line[key])
+#    try:
+#        file_op=open(file_name_line[key][1],'r')
+#        read_op=file_op.readlines()
+#        print(read_op[key-1])
         #write_op=open(file_name_line[key][1],'w')
-        read_op[key-1]=read_op[key-1]+'tictoc'
+#        read_op[key-1]=read_op[key-1]+'tictoc'
        
-        file_op.close()
-        write_op.close()
-        print(read_op)
+#        file_op.close()
+#        write_op.close()
+#        print(read_op)
        
         
-    except Exception as e:
-        print(e)  
+#    except Exception as e:
+#        print(e)  
 
 #for i  in range(0,len(file_data)):
     #print li.fi

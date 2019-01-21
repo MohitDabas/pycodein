@@ -1,10 +1,85 @@
---- modulename: autopd, funcname: <module>
-autopd.py(1): def name():
-autopd.py(4): john=name()
- --- modulename: autopd, funcname: name
-autopd.py(2):     print("lol")
-lol
-autopd.py(3):     print("second")
-second
- --- modulename: trace, funcname: _unsettrace
-trace.py(71):     sys.settrace(None)
+libssh.py(1): import fnmatch
+libssh.py(2): import os
+libssh.py(4): rootPath = './'
+libssh.py(5): pattern = '*.mp3'
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
+libssh.py(8):     for filename in fnmatch.filter(files, pattern):
+libssh.py(7): for root, dirs, files in os.walk(rootPath):
