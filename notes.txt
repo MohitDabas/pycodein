@@ -1,0 +1,11 @@
+saving parser input in dump file.
+change in the specified file
+going to make a class file_modf.py
+it has a object pickle dump
+it has reader function 
+it has a writer function
+---done--
+
+file_modf is for modifying file
+parser.py is for parsing code
+python -m trace --ignore-module=fnmatch,os,posixpath,stat,re,genericpath,sre_compile,sre_parse  --trace libssh.py >input.txt
